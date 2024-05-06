@@ -40,7 +40,7 @@
       <br>
 
       <form onsubmit="getMarks(); return false;">
-        <input type="text" id="studentNumber" name="studentNumber" required placeholder="أدخل الرقم المدني للطالب" />
+        <input type="text" id="studentNumber" name="studentNumber" required placeholder="أدخل الرقم المدرسي للطالب" />
         <button type="submit">أظهر العبارات الوصفية</button>
       </form>
 
@@ -75,7 +75,7 @@
             loadingIndicator.style.display = "none";
             if(data.marks!=="N/A"){
               document.getElementById("result").innerHTML =
-              "الرقم المدني: " + data.studentNumber + "<br>" +
+              "الرقم المدرسي: " + data.studentNumber + "<br>" +
               "اسم الطالب: " + data.marks;
             }else{
               notFoundMessage.style.display = "block";
